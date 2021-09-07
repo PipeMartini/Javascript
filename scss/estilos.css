@@ -1,0 +1,377 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Carme&family=Finger+Paint&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;500;800&display=swap");
+#ButonCards {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-style: none;
+  background: #072a57;
+  border-radius: 12px;
+  margin: auto;
+  padding-top: 2px;
+  text-align: center;
+}
+
+#ButonCards:hover {
+  background-color: white;
+  color: #006669;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#LinkFooter {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-style: none;
+  background: #072a57;
+  border-radius: 12px;
+  margin: auto;
+  padding-top: 2px;
+  text-align: center;
+}
+
+#LinkFooter:hover {
+  background-color: white;
+  color: #006669;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#ButonParchuse {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-style: none;
+  background: #072a57;
+  border-radius: 12px;
+  margin: auto;
+  padding-top: 2px;
+  text-align: center;
+}
+
+#ButonParchuse:hover {
+  background-color: white;
+  color: #006669;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.botonContacto {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-style: none;
+  background: #072a57;
+  border-radius: 12px;
+  margin: auto;
+  padding-top: 2px;
+  text-align: center;
+}
+
+.botonContacto:hover {
+  background-color: white;
+  color: #006669;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: 'Encode Sans SC';
+}
+
+#header {
+  position: fixed;
+  top: -10px;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+#Nav1 {
+  background-color: #001f3b;
+}
+
+#Nav2 {
+  background-color: #072a57;
+  font-size: 1.3rem;
+}
+
+#Nav2 a {
+  text-decoration: none;
+  color: white;
+  z-index: -5;
+}
+
+.menu__nav-colapsado {
+  color: white;
+  margin: auto;
+}
+
+#nav__item-hover:hover {
+  background-color: white;
+  color: #006669;
+  border-radius: 8px;
+}
+
+.dropdown-menu {
+  background-color: #072a57;
+}
+
+.secciones__titulo-bg {
+  padding: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contenido {
+  margin: 170px 0 0 0;
+}
+
+.secciones__texto-formato {
+  text-align: center;
+  margin: auto;
+  color: black;
+  font-family: "Encode Sans SC";
+  font-size: 3rem;
+}
+
+#TextoIndex {
+  height: auto;
+  color: black;
+  height: auto;
+  border-radius: 3px;
+  margin: 20px;
+  float: unset;
+}
+
+.Index__title-format {
+  text-align: center;
+  font-size: x-large;
+  font: bold;
+  color: black;
+}
+
+.index__text-format {
+  text-align: center;
+}
+
+#CarouselTamaño {
+  position: absolute;
+  top: 350px;
+}
+
+#carouselExampleInterval {
+  height: 35rem;
+  overflow: hidden;
+  margin: 50px 0 0 50px;
+}
+
+.contactos__forms-format {
+  background-color: #ebebeb;
+  margin: 2rem;
+}
+
+.parts__contact-space {
+  margin: 0.5rem;
+}
+
+.c-img {
+  max-width: 600px;
+  margin: 70px auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 20px 20px rgba(44, 44, 44, 0.4);
+          box-shadow: 0px 20px 20px rgba(44, 44, 44, 0.4);
+  border-radius: 6px;
+}
+
+.c-img:before, .c-img:after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 2px;
+  background-color: rgba(7, 42, 87, 0.6);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c-img:before {
+  left: -100%;
+  top: 10px;
+}
+
+.c-img:after {
+  left: 100%;
+  bottom: 10px;
+}
+
+.c-img:hover:before, .c-img:hover:after {
+  left: 15px;
+}
+
+.c-img img {
+  width: 100%;
+}
+
+.c-img .txt {
+  text-align: center;
+  position: absolute;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(0, 31, 59, 0.7);
+}
+
+.c-img .txt h3, .c-img .txt p {
+  color: white;
+  padding: 20px 20px;
+  height: 20%;
+}
+
+.c-img .txt h3 {
+  font-size: 25px;
+  font-family: "Encode Sans SC";
+}
+
+.c-img .txt p {
+  font-size: 90%;
+  font-family: "Encode Sans SC";
+}
+
+.c-img:hover .txt {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 1;
+}
+
+#TablaDeTalles {
+  font-size: 10px;
+  margin-bottom: 6rem;
+  color: #464675;
+  background-color: #e2e2e2;
+}
+
+#carouselExampleInterval {
+  padding-top: 0%;
+}
+
+.carousel-inner {
+  padding-top: 15px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#ComprarProducto {
+  padding: 5px;
+  border-top: 2px solid #072a57;
+  border-bottom: 2px solid #072a57;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  color: white;
+}
+
+h6 {
+  color: white;
+}
+
+footer {
+  height: 3.5rem;
+  width: 100%;
+  background-color: #072a57;
+  color: black;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+}
+
+footer li {
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+#Cantidades option {
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#FotoNosotros {
+  margin: 0 0 5% 0;
+  border-radius: 15px;
+  width: 100%;
+  padding: 0;
+}
+
+#FotoBariloche {
+  margin: 0 0 5% 0;
+  border-radius: 15px;
+  width: 100%;
+  padding: 0;
+}
+
+#mapa {
+  border-radius: 10px;
+}
+
+#ubicacion {
+  background-color: #c2c1c1;
+  padding: 1rem 0 1rem 0;
+  border-radius: 10px;
+}
+
+#CarouselProducto {
+  padding-bottom: 5rem;
+}
+
+#TablaDeContacto {
+  background-color: rgba(0, 42, 88, 0.4);
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.dropdown-menu {
+  padding: 5px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/*# sourceMappingURL=estilos.css.map */

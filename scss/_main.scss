@@ -1,0 +1,34 @@
+@mixin Botones{
+        font-size: 1rem;
+        color: $text-c-ligth;
+        text-decoration: none;
+        border-style:none;
+        background: $bg-color-medium;
+        border-radius:12px;
+        margin: auto;
+        padding-top: 2px;
+        text-align: center;
+    &:hover{
+            background-color:$bg-color-hover;
+            color:$text-c-hover;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: 300ms;
+        }
+}
+#ButonCards{
+    @include Botones;   
+}
+#LinkFooter{
+    @include Botones;
+}
+#ButonParchuse{
+    @include Botones;
+}
+.botonContacto{
+    @include Botones()
+}
+
+@mixin Txt{
+    justify-content: center;
+}

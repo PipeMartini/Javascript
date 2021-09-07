@@ -1,0 +1,235 @@
+@import "_variables.scss";
+@import "_main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;500;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:$bg-color-ligth;
+    font-family:'Encode Sans SC';
+}
+#header{
+    position: fixed;
+    top: -10px;
+    z-index: 10;
+    margin: 0;
+    padding:0; 
+    }
+#Nav1{
+    background-color: $bg-color-dark;
+}
+
+#Nav2{
+    background-color: $bg-color-medium;
+    font-size: 1.3rem;
+
+}
+#Nav2 a{
+    text-decoration: none;
+    color: $text-c-ligth;
+    z-index: -5;
+}
+.menu__nav-colapsado{
+    color:$text-c-ligth;
+    margin: auto;
+}
+#nav__item-hover:hover{
+    background-color:$bg-color-hover;
+    color:$text-c-hover;
+    border-radius: 8px;
+}
+.dropdown-menu{
+    background-color: $bg-color-medium;
+}
+.secciones__titulo-bg {
+    padding: 5px;
+    justify-content: center;
+}
+#contenido{
+    margin: 170px 0 0 0;
+}
+.secciones__texto-formato{
+    text-align: center;
+    margin: auto;
+    color: $text-c-dark;
+    font-family: $font-type-slim;
+    font-size: 3rem;
+}
+#TextoIndex{
+    height: auto;
+    color: $text-c-dark;
+    height: auto;
+    border-radius: 3px;
+    margin: 20px;
+    float: unset;
+}
+.Index__title-format{
+    text-align: center;
+    font-size:x-large;
+    font: bold;
+    color: $text-c-dark;
+}
+.index__text-format{
+    text-align: center;
+}
+#CarouselTamaño{
+    position:absolute;
+    top: 350px;
+}
+#carouselExampleInterval{
+    height: 35rem;
+    overflow: hidden;
+    margin: 50px 0 0 50px;
+}
+
+.contactos__forms-format{
+    background-color: $bg-color-ligth;
+    margin: 2rem;
+}
+.parts__contact-space{
+    margin: 0.5rem;
+}
+.c-img{
+    
+    max-width: 600px;
+    margin:70px auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    box-shadow:(0px 20px 20px) rgba($color: #2c2c2c, $alpha: 0.40) ;
+    border-radius: 6px;
+
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 30px);
+        height: 2px;
+        background-color:rgba($color:$bg-color-medium , $alpha: 0.6) ;
+        transition:all .3s;
+    }
+    &:before{left: -100%; top: 10px}
+    &:after{left: 100%; bottom: 10px}
+    &:hover:before, &:hover:after {
+        left: 15px;
+    }
+    img{
+        width: 100%;
+    }
+    .txt{
+        text-align: center;
+        position: absolute;
+        transition: all .3s;
+        transform: scale(0.0);
+        opacity: 0;
+        width: 100%;
+        height: 90%;
+        background-color:rgba($color:$bg-color-dark , $alpha: 0.70) ;
+        h3, p{
+            color: $text-c-ligth;
+            padding: 20px 20px;
+            height: 20%;
+        }
+        h3{
+            font-size: 25px;
+            font-family: $font-type-medium;
+        }
+        p{
+            font-size: 90%;
+            font-family: $font-type-medium;
+        }
+    }
+    &:hover .txt{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+}
+#TablaDeTalles{ 
+    font-size: 10px;
+    margin-bottom: 6rem;
+    color: rgb(70, 70, 117);
+    background-color: rgb(226, 226, 226);
+}
+#carouselExampleInterval{
+    padding-top: 0%;
+}
+.carousel-inner{
+    padding-top: 15px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+#ComprarProducto{
+    padding: 5px;
+    border-top: 2px solid $bg-color-medium;
+    border-bottom: 2px solid $bg-color-medium;
+}
+p{
+    margin: 0;
+    padding: 0;   
+}
+h5{
+    color: $text-c-ligth;
+}
+h6{
+    color: $text-c-ligth;
+}
+footer{
+    height: 3.5rem;
+    width: 100%;
+    background-color: $bg-color-medium;
+    color: $text-c-dark;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    li{
+        text-decoration: none;
+        color:$text-c-ligth;
+        margin-top: 1rem;
+        }
+    }
+#Cantidades{
+    option{
+        font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+#FotoNosotros{
+    margin:0 0 5% 0;
+    border-radius: 15px;
+    width: 100%;
+    padding: 0;
+    }
+#FotoBariloche{
+    margin:0 0 5% 0;
+    border-radius: 15px;
+    width: 100%;
+    padding: 0;
+    }
+#mapa{
+    border-radius: 10px;
+    }
+#ubicacion{
+    background-color: rgb(194, 193, 193);
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px;
+    }
+#CarouselProducto{
+    padding-bottom: 5rem;
+    }
+#TablaDeContacto{
+    background-color: rgba($color: #002a58, $alpha: 0.40);
+    padding:14px;
+    border-radius: 10px;
+}
+.dropdown-menu{
+    padding: 5px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
