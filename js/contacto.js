@@ -1,7 +1,7 @@
 document.getElementById('enviarContacto').onclick = enviarContacto;
 
 function enviarContacto () {
-   console.log("pium piuuuuum")
+   console.log("Enviado")
    let imputNyA = document.getElementById ('imputNyA').value;
    let imputTel = document.getElementById ('imputTel').value;
    let imputEmail = document.getElementById ('imputEmail').value;
