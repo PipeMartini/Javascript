@@ -44,3 +44,5 @@ productos.forEach(elementos=>{
     </div></a>
 </div> `)
 })
+
+document.getElementById("Cards").innerHTML = acumuladorstock
