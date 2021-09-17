@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="scss/estilo.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script defer src="js/main.js"></script>
+    
     <title>Nutrición</title>
 </head>
 
@@ -42,13 +44,53 @@
         </nav>
     </header>
     <main>
-        <div id="Secuencia" class="container fluid">
-            <h3>Pasos para cargar los datos</h3>
-            <p>1. seleccionar el area que se cargarar los datos en el menu desplegable.</p>
-            <p>2. cargar n° de cama, nombre, apellido y dieta que se requiere</p>
-            <p>3. Al tocar enviar automaticamente se envia a cocina. En cocina se actualiza la tabla cada 5 minutos</p>
+        <h2 id= "Areas">Pediatria</h2>
+
+        <div class="form-group container mg-auto col-lg-6 col-m-12 col-sm-12">
+            <label for="formGroupExampleInput" class="mt-3">Selecciona la sub area</label>
+            <select id="SubAreas" class="form-control container mg-auto">
+            <option value="sub areas">Sub areas</option>
+            <option value="Respiratorio 1">Respiratorio 1</option>
+            <option value="Respiratorio 2">Respiratorio 2</option>
+            <option value="terapia">terapia</option>
+            <option value="Sala general">Sala general</option>
+        </select>
+            <!-- ingreso del nº de cama-->
+            <label for="formGroupExampleInput" class="mt-3">Nº de cama</label>
+            <input id="Ncamas" type="number" class="form-control" id="formGroupExampleInput" placeholder="Nº de cama">
+        </div>
+        <div class="form-group container mg-auto col-lg-6 col-m-12 col-sm-12">
+            <!-- ingreso del nombre y apellido del paciente-->
+            <label for="formGroupExampleInput" class="mt-3">Paciente</label>
+            <input id="PacienteNombre" type="text" class="form-control" placeholder="Nombre">
+            <label for="formGroupExampleInput"></label>
+            <input  id="PacienteApellido" type="text" class="form-control" placeholder="Apellido">
+            <label for="formGroupExampleInput" class="mt-3">Dieta</label>
+            <select id="SeleccionDieta" class="form-control container mg-auto">
+                <option class="SelecDiet">Seleccione Dieta</option>
+                <option class="General c/p. blando">General c/p. blando</option>
+                <option class="General cortado">General cortado</option>
+                <option class="Renal">Renal</option>
+                <option class="Liviana sin sal c/p. blando">Liviana sin sal c/p. blando</option>
+                <option class="Liviana sin sal/cortado">Liviana sin sal/cortado</option>
+                <option class="Blando">Blando</option>
+                <option class="Blando con pollo">Blando con pollo</option>
+                <option class="Astingente">Astingente</option>
+                <option class="DBT">DBT</option>
+                <option class="Liquado">Liquado</option>
+                <option class="Liquido">Liquido</option>
+            </select>
+            <div class="form-check mt-3">
+                <input id="descartable" class="form-check-input" type="checkbox" value="True">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Descartable
+                </label>
+              </div>
+            <a href="#" onclick="recolector()" id="enviardatos" class="btn btn-primary btn-lg active mt-4" role="button" aria-pressed="true">ENVIAR</a>
+            <a href="#" onclick="traerDatos()" id="traerDatos" class="btn btn-primary btn-lg active mt-4" role="button" aria-pressed="true">traer</a>
         </div>
     </main>
+    <script src="js/tabla.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
